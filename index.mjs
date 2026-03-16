@@ -27,7 +27,7 @@ program
         }
 
         console.log(`Installing ${component}...`);
-        await execa("npx", ["shadcn@latest", "add", registryUrl, "--legacy-peer-deps"], {
+        await execa("npx", ["shadcn@latest", "add", url, "--legacy-peer-deps"], {
             stdio: "inherit",
             cwd: process.cwd(),
         });
