@@ -27,7 +27,10 @@ program
         }
 
         console.log(`Installing ${component}...`);
-        await execa("npx", ["shadcn@latest", "add", url], {stdio: "inherit"});
+        await execa("npx", ["shadcn@latest", "add", registryUrl, "--legacy-peer-deps"], {
+            stdio: "inherit",
+            cwd: process.cwd(),
+        });
     });
 
 program.parse();
