@@ -2,13 +2,14 @@
 import {program} from "commander";
 import {execa} from "execa";
 
-const REGISTRY_BASE = "https://jeje-ui.vercel.app/r";
+const REGISTRY_BASE = "https://jejeui.vercel.app/r";
 
 const components = {
     autocomplete: `${REGISTRY_BASE}/autocomplete.json`,
     "image-uploader": `${REGISTRY_BASE}/image-uploader.json`,
     "virtualized-dropdown": `${REGISTRY_BASE}/virtualized-dropdown.json`,
     "data-grid": `${REGISTRY_BASE}/data-grid.json`,
+    "limitless-dropdown": `${REGISTRY_BASE}/limitless-dropdown.json`,
 };
 
 program.name("jejeui").description("jeje/ui component CLI").version("1.0.0");
